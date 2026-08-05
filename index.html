@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Next-Start Up Conclave 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <span class="logo-mark">▲</span>
+      <span class="logo-text">Next<span class="red">.</span>Let</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#agenda">Schedule</a></li>
+      <li><a href="#speakers">Speakers</a></li>
+      <li><a href="#venue">Venue</a></li>
+      <li><a href="#sponsors">Sponsors</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#register" class="btn-nav">Register</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#home" onclick="closeMobile()">Home</a></li>
+    <li><a href="#agenda" onclick="closeMobile()">Schedule</a></li>
+    <li><a href="#speakers" onclick="closeMobile()">Speakers</a></li>
+    <li><a href="#venue" onclick="closeMobile()">Venue</a></li>
+    <li><a href="#sponsors" onclick="closeMobile()">Sponsors</a></li>
+    <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+    <li><a href="#register" onclick="closeMobile()">Register</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <div class="grid-lines"></div>
+    <div class="red-burst"></div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-eyebrow reveal">Mumbai, 2026 &nbsp;&nbsp;|&nbsp;&nbsp; Startup Conclave Hall</p>
+    <h1 class="hero-title reveal">
+      <span class="line">NEXT-START UP</span>
+      <span class="line accent-line">CONCLAVE</span>
+    </h1>
+    <p class="hero-sub reveal">Where founders meet investors, ideas become companies,<br>and the next generation of ventures is born.</p>
+    <div class="hero-ctas reveal">
+      <a href="#register" class="btn-primary">Grab Your Seat</a>
+      <a href="#agenda" class="btn-ghost">View Schedule</a>
+    </div>
+  </div>
+  <div class="hero-stats reveal">
+    <div class="stat"><span class="stat-num">200+</span><span class="stat-label">Startups</span></div>
+    <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Investors</span></div>
+    <div class="stat"><span class="stat-num">2</span><span class="stat-label">Days</span></div>
+    <div class="stat"><span class="stat-num">1K+</span><span class="stat-label">Attendees</span></div>
+  </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section class="highlights">
+  <div class="container">
+    <div class="hl-grid">
+      <div class="hl-card reveal">
+        <div class="hl-icon">🎤</div>
+        <h3>Speakers</h3>
+        <p>Industry-leading founders, VCs, and tech visionaries sharing their hard-won insights.</p>
+        <a href="#speakers" class="hl-link">Meet them →</a>
+      </div>
+      <div class="hl-card red reveal">
+        <div class="hl-icon">💡</div>
+        <h3>Pitch Ideas</h3>
+        <p>Compete in live pitch rounds with real investor feedback and funding opportunities on the line.</p>
+      </div>
+      <div class="hl-card reveal">
+        <div class="hl-icon">🤝</div>
+        <h3>Networking</h3>
+        <p>Curated 1:1 meetings, roundtables, and evening mixers designed for real connections.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AGENDA -->
+<section id="agenda" class="agenda">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Schedule</span>
+      <h2 class="section-title">AGENDA</h2>
+      <p class="section-meta">April 12–13, 2026 &nbsp;·&nbsp; Mumbai Convention Centre</p>
+    </div>
+    <div class="agenda-grid">
+      <div class="agenda-day reveal">
+        <div class="day-label"><span class="day-num">Day 1</span><span class="day-time">09:00 – 19:00</span></div>
+        <div class="day-content">
+          <h3>AI Innovations & Trends</h3>
+          <p>Opening keynotes from founders on the frontier of generative AI, deep tech, and emerging startup ecosystems globally.</p>
+          <ul class="timeline">
+            <li><span class="tl-time">09:00</span> Opening Ceremony & Welcome</li>
+            <li><span class="tl-time">10:30</span> Keynote: The Future of AI Startups</li>
+            <li><span class="tl-time">13:00</span> Networking Lunch</li>
+            <li><span class="tl-time">14:30</span> Startup Pitch Rounds – Track A</li>
+            <li><span class="tl-time">17:00</span> Panel: Funding in 2026</li>
+            <li><span class="tl-time">19:00</span> Evening Mixer</li>
+          </ul>
+        </div>
+      </div>
+      <div class="agenda-day reveal">
+        <div class="day-label"><span class="day-num">Day 2</span><span class="day-time">09:00 – 20:00</span></div>
+        <div class="day-content">
+          <h3>AI Technologies & Applications</h3>
+          <p>Deep-dive workshops on real-world deployment, scaling, SaaS models, and closing the deal with enterprise clients.</p>
+          <ul class="timeline">
+            <li><span class="tl-time">09:00</span> Workshop: Building AI Products</li>
+            <li><span class="tl-time">11:00</span> Startup Pitch Rounds – Track B</li>
+            <li><span class="tl-time">13:00</span> Networking Lunch</li>
+            <li><span class="tl-time">14:30</span> Masterclasses (3 parallel tracks)</li>
+            <li><span class="tl-time">17:30</span> Awards & Closing Keynote</li>
+            <li><span class="tl-time">19:00</span> Gala Dinner</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPEAKERS -->
+<section id="speakers" class="speakers">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Featured</span>
+      <h2 class="section-title">KEYNOTE<br>SPEAKERS</h2>
+    </div>
+    <div class="speakers-grid">
+      <div class="speaker-card reveal">
+        <div class="speaker-img" style="background:#222">
+          <div class="speaker-placeholder">DR</div>
+        </div>
+        <div class="speaker-info">
+          <h4>Dr. Emily Clarke</h4>
+          <p>AI Research Director, TechVision</p>
+        </div>
+      </div>
+      <div class="speaker-card reveal">
+        <div class="speaker-img dark" style="background:#1a1a1a">
+          <div class="speaker-placeholder">JM</div>
+        </div>
+        <div class="speaker-info">
+          <h4>James Murati</h4>
+          <p>Co-founder, Nexus Labs</p>
+        </div>
+      </div>
+      <div class="speaker-card reveal">
+        <div class="speaker-img" style="background:#2a2a2a">
+          <div class="speaker-placeholder">SA</div>
+        </div>
+        <div class="speaker-info">
+          <h4>Sophia Adeyemi</h4>
+          <p>Partner, Horizon Ventures</p>
+        </div>
+      </div>
+      <div class="speaker-card reveal">
+        <div class="speaker-img" style="background:#1e1e1e">
+          <div class="speaker-placeholder">MR</div>
+        </div>
+        <div class="speaker-info">
+          <h4>Dr. Ravi Menon</h4>
+          <p>CTO, Quantum Startups</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY ATTEND -->
+<section class="why">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Reasons</span>
+      <h2 class="section-title">WHY ATTEND?</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal">
+        <div class="why-num">01</div>
+        <div class="why-body">
+          <h4>Unparalleled Networking</h4>
+          <p>Meet 1,000+ founders, investors, and operators who are actively building the next generation of companies.</p>
+        </div>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-num">02</div>
+        <div class="why-body">
+          <h4>Investor Access</h4>
+          <p>Pitch your startup to 50+ top-tier VCs with live feedback sessions. Real money, real conversations.</p>
+        </div>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-num">03</div>
+        <div class="why-body">
+          <h4>Evolving Partnerships</h4>
+          <p>Collaborative sessions with enterprise partners, academic institutions, and government bodies.</p>
+        </div>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-num">04</div>
+        <div class="why-body">
+          <h4>Mentor Mentorship Exchange</h4>
+          <p>One-on-one mentorship from seasoned entrepreneurs who have built and exited successful ventures.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENT DETAILS -->
+<section id="venue" class="event-details">
+  <div class="container">
+    <div class="ed-grid">
+      <div class="ed-col reveal">
+        <h2 class="section-title">EVENT<br>DETAILS</h2>
+        <table class="details-table">
+          <tr><td>Date</td><td>April 12–13, 2026</td></tr>
+          <tr><td>City</td><td>Mumbai, India</td></tr>
+          <tr><td>Venue</td><td>Mumbai Convention Centre</td></tr>
+          <tr><td>Time</td><td>09:00 AM – 08:00 PM</td></tr>
+          <tr><td>Language</td><td>English / Hindi</td></tr>
+          <tr><td>Food & Beverage</td><td>Included (Day Pass)</td></tr>
+          <tr><td>Ticket Type</td><td>Day Pass / Full Pass</td></tr>
+        </table>
+      </div>
+      <div class="ed-col map-col reveal">
+        <div class="map-placeholder">
+          <div class="map-pin">📍</div>
+          <p>AKGEC Convention Centre<br>DASNA<br>GHAZIABAD – 400 051</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTER -->
+<section id="register" class="register">
+  <div class="container">
+    <div class="reg-inner">
+      <div class="reg-left reveal">
+        <span class="section-tag">Join Us</span>
+        <h2 class="section-title">REGISTER<br>NOW</h2>
+        <div class="countdown" id="countdown">
+          <div class="count-seg"><span id="cd-days">00</span><label>Days</label></div>
+          <div class="count-sep">:</div>
+          <div class="count-seg"><span id="cd-hrs">00</span><label>Hrs</label></div>
+          <div class="count-sep">:</div>
+          <div class="count-seg"><span id="cd-min">00</span><label>Min</label></div>
+          <div class="count-sep">:</div>
+          <div class="count-seg"><span id="cd-sec">00</span><label>Sec</label></div>
+        </div>
+        <div class="ticket-option">
+          <div class="ticket-badge">GET YOUR PASS</div>
+          <div class="ticket-price">₹100 <span>/ per person</span></div>
+        </div>
+      </div>
+      <div class="reg-right reveal">
+        <div class="reg-form-wrap">
+          <h3>Secure Your Spot</h3>
+          <p class="reg-sub">Use your college email to register. Only verified college emails accepted.</p>
+          <div id="regMsg" class="form-msg hidden"></div>
+          <div class="reg-form">
+            <div class="form-row">
+              <input type="text" id="regName" placeholder="Full Name" required>
+            </div>
+            <div class="form-row">
+              <input type="email" id="regEmail" placeholder="College Email (you@college.edu)" required>
+            </div>
+            <div class="form-row">
+              <input type="text" id="regCollege" placeholder="College / University" required>
+            </div>
+            <div class="form-row">
+              <select id="regTicket">
+                <option value="">Select Ticket Type</option>
+                <option value="day1">Day 1 Pass</option>
+                <option value="day2">Day 2 Pass</option>
+                <option value="full">Full Event Pass (Best Value)</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <input type="text" id="regPhone" placeholder="Phone Number">
+            </div>
+            <button class="btn-primary full" id="regBtn" onclick="handleRegister()">
+              <span id="regBtnText">Register Now →</span>
+            </button>
+            <p class="form-note">*Only .edu, .ac.in and verified college domains are accepted.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Get in Touch</span>
+      <h2 class="section-title">CONTACT</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-left">
+        <h3>Have a question? Want to partner with us?</h3>
+        <p>
+          Our team is ready to answer all your questions. Fill out the form,
+          and we’ll be in touch as soon as possible. For urgent inquiries,
+          please use the contact details provided.
+        </p>
+        <div class="contact-meta">
+          <div>
+            <h5>GENERAL INQUIRIES</h5>
+            <p>info@startupconclave.com</p>
+          </div>
+          <div>
+            <h5>SPONSORSHIPS</h5>
+            <p>partner@startupconclave.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="reg-right reveal">
+        <div class="reg-form-wrap">
+          <h3>Send us a Message</h3>
+          <div id="contactMsg" class="form-msg hidden"></div>
+          <div class="reg-form">
+            <div class="form-row">
+              <input type="text" id="ctName" placeholder="Full Name" required>
+            </div>
+            <div class="form-row">
+              <input type="email" id="ctEmail" placeholder="Email Address" required>
+            </div>
+            <div class="form-row">
+              <input type="text" id="ctSubject" placeholder="Subject" required>
+            </div>
+            <div class="form-row">
+              <textarea id="ctMsg" placeholder="Your Message" rows="4" required></textarea>
+            </div>
+            <button class="btn-primary full" onclick="handleContact()">
+              Send Message →
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-left">
+      <h3>Next-Gen AI Summit 2026</h3>
+      <nav class="footer-nav">
+        <a href="#agenda">Agenda</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#register">Register</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#venue">Venue</a>
+        <a href="#contact">Contact</a>
+        <a href="#">FAQ</a>
+      </nav>
+      <p class="footer-copy">© 2026 Startup Conclave. All rights reserved.</p>
+    </div>
+    <div class="footer-right">
+      <h5>STAY UPDATED</h5>
+      <p>Subscribe for event updates & exclusive content.</p>
+      <div id="subMsg" class="form-msg hidden"></div>
+      <div class="sub-form">
+        <input type="email" id="subEmail" placeholder="Email">
+        <button class="btn-primary" onclick="handleSubscribe()">Stay updated →</button>
+      </div>
+      <div class="footer-social">
+        <h5>FOLLOW US</h5>
+        <div class="social-row">
+          <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-icon" aria-label="Instagram">◎</a>
+          <a href="#" class="social-icon" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
