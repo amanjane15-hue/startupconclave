@@ -18,6 +18,7 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 const fs = require('fs');
+const os = require('os');
 const path = require('path');
 
 const app = express();
@@ -34,8 +35,11 @@ app.get('/', (req, res) => {
 app.use(express.static(PUBLIC_DIR));
 
 /* ===== DATA STORE (JSON files – swap for a real DB in production) ===== */
-const DATA_DIR = path.join(__dirname, 'data');
-if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR);
+const DATA_DIR = process.env.VERCEL
+  ? path.join(os.tmpdir(), 'startupconclave-data')
+  : path.join(__dirname, 'data');
+
+if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
 
 const REGISTRATIONS_FILE = path.join(DATA_DIR, 'registrations.json');
 const SUBSCRIBERS_FILE   = path.join(DATA_DIR, 'subscribers.json');
