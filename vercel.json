@@ -11,7 +11,23 @@
   },
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/",
+      "destination": "/server.js"
+    },
+    {
+      "source": "/register",
+      "destination": "/server.js"
+    },
+    {
+      "source": "/contact",
+      "destination": "/server.js"
+    },
+    {
+      "source": "/subscribe",
+      "destination": "/server.js"
+    },
+    {
+      "source": "/admin/:path*",
       "destination": "/server.js"
     }
   ]
