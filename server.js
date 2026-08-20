@@ -25,7 +25,13 @@ app.use(cors());
 app.use(express.json());
 
 // Serve frontend files
-app.use(express.static(path.join(__dirname)));
+const PUBLIC_DIR = path.join(__dirname);
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(PUBLIC_DIR, 'index.html'));
+});
+
+app.use(express.static(PUBLIC_DIR));
 
 /* ===== DATA STORE (JSON files – swap for a real DB in production) ===== */
 const DATA_DIR = path.join(__dirname, 'data');
@@ -415,11 +421,15 @@ app.get('/admin/stats', (req, res) => {
 
 /* ===== START ===== */
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
-  console.log(`\n🚀 Next-Start Up Conclave Backend running on http://localhost:${PORT}\n`);
-  console.log(`  POST /register          – Student registration (college email only)`);
-  console.log(`  POST /contact           – Contact form`);
-  console.log(`  POST /subscribe         – Newsletter subscription`);
-  console.log(`  POST /admin/notify      – Send update to all subscribers (requires X-Admin-Key)`);
-  console.log(`  GET  /admin/stats       – Dashboard stats (requires X-Admin-Key)\n`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`\n🚀 Next-Start Up Conclave Backend running on http://localhost:${PORT}\n`);
+    console.log(`  POST /register          – Student registration (college email only)`);
+    console.log(`  POST /contact           – Contact form`);
+    console.log(`  POST /subscribe         – Newsletter subscription`);
+    console.log(`  POST /admin/notify      – Send update to all subscribers (requires X-Admin-Key)`);
+    console.log(`  GET  /admin/stats       – Dashboard stats (requires X-Admin-Key)\n`);
+  });
+}
+
+module.exports = app;
