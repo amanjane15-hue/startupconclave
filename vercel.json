@@ -1,34 +1,52 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "functions": {
-    "server.js": {
-      "includeFiles": [
-        "index.html",
-        "style.css",
-        "app.js"
-      ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "style.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "app.js",
+      "use": "@vercel/static"
     }
-  },
-  "rewrites": [
+  ],
+  "routes": [
     {
-      "source": "/",
-      "destination": "/server.js"
+      "src": "/style.css",
+      "dest": "/style.css"
     },
     {
-      "source": "/register",
-      "destination": "/server.js"
+      "src": "/app.js",
+      "dest": "/app.js"
     },
     {
-      "source": "/contact",
-      "destination": "/server.js"
+      "src": "/register",
+      "dest": "/server.js"
     },
     {
-      "source": "/subscribe",
-      "destination": "/server.js"
+      "src": "/contact",
+      "dest": "/server.js"
     },
     {
-      "source": "/admin/:path*",
-      "destination": "/server.js"
+      "src": "/subscribe",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/admin/(.*)",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
     }
   ]
 }
